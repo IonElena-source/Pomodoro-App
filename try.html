@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+</head>
+
+<body>
+    <h1 id="titlu">
+        My productive technique </h1>
+    <div class="split left">
+        <h1 id="h1-Obiective">
+            Objectives</h1>
+        <input type="text" placeholder="What do you have to do?" id="input-item-list">
+        <button id="btn-add" onclick="addItem()">ADD</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <div class="split right">
+        <h1 id="h1-Pomodoro">Pomodoro Tehnique</h1>
+        <video height="240" id="hourglass">
+    <source src="Images/hourglass.mp4" type="video/mp4">
+    </video>
+        <div id="Div-Times">
+            <label for="input">Set the time</label>
+            <input list="Times" id="input">
+            <datalist id="Times">
+            <option value="25 minute"></option>
+            <option value="35 minute"></option>
+            <option value="45 minute"></option>
+            <option value="1 minute"></option>
+            </datalist>
+            <button id="btn-start" onclick="play()">START</button>
+        </div>
+        <div id="Div-Breaks">
+            <label for="input-Break">Set the break</label>
+            <input list="Breaks" id="input-Break">
+            <datalist id="Breaks">
+            <option value="5 minute"></option>
+            <option value="10 minute"></option>
+            <option value="1 minute"></option>
+            </datalist>
+            <button id="btn-stop" onclick="stop()">STOP</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
